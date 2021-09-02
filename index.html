@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zxc_Community</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<header class="header h-100">
+		<div class="header-content">
+			<img src="img/logo.svg" class="header-content__img" alt="Логотип">
+			<h1 class="header-content__title">
+				ZXCommunic
+			</h1>
+			<div class="header-content__subtitle">
+				Начните общаться прямо сейчас
+			</div>
+			<button class="header-content__btn">
+				Войти по профилю
+			</button>
+		</div>
+	</header>
+	<main class="container">
+		<div class="auth h-100 hide">
+			<form id="auth-form">
+				<h2>Вход</h2>
+				<input type="name" name="nickname" placeholder="Логин">
+				<input type="password" autocomplete name="password" placeholder="Пароль">
+				<button>Войти</button>
+			</form>
+		</div>
+		<div class="profile h-100 hide">
+
+			<div class="profile-header">
+				<div class="profile-left">
+					<button class="profile__btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<span class="profile__text">
+						Social Media Managment
+					</span>
+				</div>
+				<button class="notification">
+					<img src="img/bell.svg" alt="Оповещение">
+				</button>
+			</div>
+
+			<div class="profile-content">
+				<div class="profile-body" data-dialog="d1">
+					<img src="https://sun1-90.userapi.com/s/v1/ig2/47VBaRLLTc_W1OX8BrXLOWKICK96sYTGtapVTvrxEriYrY5fz5Uv617nQNPHWZJIdMAq8Jc-yvQ0oVPNyw5hljaz.jpg?size=200x0&quality=96&crop=2,2,412,412&ava=1" alt="Человек 1">
+					<div class="profile-about">
+						<span class="profile__name">Adam</span>
+						<span class="profile__msg">Слушай, ты не занят сейчас?</span>
+					</div>
+				</div>
+				<div class="profile-body" data-dialog="d2">
+					<img src="https://d30v1l0pe4hkha.cloudfront.net/3010e0d982df84de7b188b166e26336d.jpg" alt="Человек 2">
+					<div class="profile-about">
+						<span class="profile__name">Keylor</span>
+						<span class="profile__msg">Сходим в кино?</span>
+					</div>
+				</div>
+
+				<div class="profile-body" data-dialog="d3">
+					<img src="https://sun9-15.userapi.com/impf/Be8mtwUcVmxbPUxWUGtz-nMQjO0pVldpfAw7xA/eiARL1u3D4c.jpg?size=230x232&quality=96&sign=3d69d3f266b93a97be41cead80eebc0b&type=album" alt="Человек 3">
+					<div class="profile-about">
+						<span class="profile__name">Andrew</span>
+						<span class="profile__msg">Привет, как настроение?</span>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="profile-footer">
+				<select name="typeMsg" class="typeMsg">
+					<option value="msg">Messages</option>
+					<option value="post">Posts</option>
+				</select>
+				<button class="create">
+					
+				</button>
+			</div>
+		</div>
+
+		<div class="send h-100 hide" id="d1">
+			<div class="span">
+				<div class="send-name">
+					
+				</div>
+				<button>
+					<img src="img/left-arrow.svg" alt="Стрелка назад">
+				</button>
+			</div>
+			<div class="send-content">
+				<div class="send-content__friend">
+					<span class="send-name">
+						Adam
+					</span>
+					<span class="send-time">
+						22.08.2021, 18:01:44
+					</span>
+					<span class="send-text">
+						Привет, как дела?
+					</span>
+				</div>
+				<div class="send-content__friend">
+						<span class="send-name">
+							Adam
+						</span>
+						<span class="send-time">
+							22.08.2021, 18:02:11
+						</span>
+						<span class="send-text">
+							Слушай, ты не занят сейчас?
+						</span>
+				</div>
+			</div>
+			<form class="send-form">
+				<label for="file"><img src="img/paper-clip.svg" alt="Скрепка"></label>
+				<input type="file" name="file" class="send-form__file hide" id="file">
+				<input type="text" name="text" class="send-form__text">
+				<button class="send-form__btn">
+					<img src="img/up-arrow.svg" alt="Arrow">
+				</button>
+			</form>
+		</div>
+
+		<div class="send h-100 hide" id="d2">
+			<div class="span">
+				<div class="send-name">
+					
+				</div>
+				<button>
+					<img src="img/left-arrow.svg" alt="Стрелка назад">
+				</button>
+			</div>
+			<div class="send-content">
+				<div class="send-content__friend">
+						<span class="send-name">
+							Keylor
+						</span>
+						<span class="send-time">
+							19.08.2021, 09:21:43
+						</span>
+						<span class="send-text">
+							Сходим в кино?
+						</span>
+				</div>
+			</div>
+			<form class="send-form">
+				<label for="file"><img src="img/paper-clip.svg" alt="Скрепка"></label>
+				<input type="file" name="file" class="send-form__file hide" id="file">
+				<input type="text" name="text" class="send-form__text">
+				<button class="send-form__btn">
+					<img src="img/up-arrow.svg" alt="Arrow">
+				</button>
+			</form>
+		</div>
+
+		<div class="send h-100 hide" id="d3">
+			<div class="span">
+				<div class="send-name">
+					
+				</div>
+				<button>
+					<img src="img/left-arrow.svg" alt="Стрелка назад">
+				</button>
+			</div>
+			<div class="send-content">
+				<div class="send-content__friend">
+						<span class="send-name">
+							Andrew
+						</span>
+						<span class="send-time">
+							17.08.2021, 22:14:59
+						</span>
+						<span class="send-text">
+							Привет, как настроение?
+						</span>
+				</div>
+			</div>
+			<form class="send-form">
+				<label for="file"><img src="img/paper-clip.svg" alt="Скрепка"></label>
+				<input type="file" name="file" class="send-form__file hide" id="file">
+				<input type="text" name="text" class="send-form__text">
+				<button class="send-form__btn">
+					<img src="img/up-arrow.svg" alt="Arrow">
+				</button>
+			</form>
+		</div>
+
+		<div class="name h-100 hide">
+			<div class="name-right">
+				<div class="name-right__header">
+					<span>
+						Media Manager
+					</span>
+					<button class="notification">
+						<img src="img/bell.svg" alt="Оповещение">
+					</button>
+				</div>
+
+				<div class="name-content">
+					<div class="name-post">
+						<img class="ava" src="https://sun9-56.userapi.com/c840327/v840327103/84c9e/f2C1bG9y5o4.jpg" alt="Аватарка">
+						<div class="name-text">
+							<div class="name-text__name">Zxc123 <span class="date">78.08.2021, 19:08:01</span></div>
+							<p class="name-text__descr">Купил настольные часы кстати! <div><img style="max-width: 70px" src="https://timestore.ru/upload/iblock/a0d/B1659.jpg" alt="Часы"></div></p>
+						</div>
+					</div>
+					<div class="name-post">
+						<img class="ava" src="https://sun9-56.userapi.com/c840327/v840327103/84c9e/f2C1bG9y5o4.jpg" alt="Аватарка">
+						<div class="name-text">
+							<div class="name-text__name">Zxc123 <span class="date">18.08.2021, 22:08:01</span></div>
+							<p class="name-text__descr">Сегодня я прочитал книгу Льва Николаевича Толстого "Война и Мир"
+								<div><img style="max-width: 250px" src="https://tarologiay.ru/wp-content/uploads/2020/10c/t2l1aemo.jpg" alt="Картина"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-footer name-footer">
+					<select name="typeMsg" class="typeMsg">
+						<option value="post">Posts</option>
+						<option value="msg">Messages</option>
+					</select>
+					<button class="create">
+						
+					</button>
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+
+	<div class="name-left profile-menu">
+		<div class="name-left__top">
+			<img src="https://sun9-56.userapi.com/c840327/v840327103/84c9e/f2C1bG9y5o4.jpg" alt="Аватарка">
+			<div class="name-info">
+				<span class="name-info__name">
+					Name
+				</span>
+				<span class="name-info__socmedia">
+					SocMedia
+				</span>
+			</div>
+		</div>
+		<a class="name-left__bottom" href="#">
+			<button class="create">
+				
+			</button>
+			<span class="name-add">
+				Add new Account
+			</span>
+		</a>
+		<button class="name-left__exit">
+			Exit
+		</button>
+	</div>
+
+
+
+</body>
+</html>

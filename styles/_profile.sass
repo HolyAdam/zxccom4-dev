@@ -1,0 +1,133 @@
+.profile
+	position: relative
+	transition: 0.4s ease-in-out
+	&-header
+		padding: 12px 15px
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid #000
+	&__btn
+		background-color: transparent
+		border: none
+		position: relative
+		width: 22px
+		height: 24px
+		cursor: pointer
+		display: block
+		span
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			background-color: #000
+			width: 100%
+			height: 2px
+			border-radius: 2px
+			&:nth-child(1)
+				top: 6px
+			&:nth-child(3)
+				top: 18px
+	&__text
+		margin-left: 25px
+		padding-left: 20px
+		border-left: 1px solid #bbb
+	&-left
+		display: flex
+	&-menu
+		display: none
+		position: absolute
+		background-color: #fff
+		height: 100%
+		left: 0
+		transform: translateX(-100%)
+		transition: transform 0.4s ease-in-out
+		font-size: 14px
+		z-index: 5
+		top: 0
+		&.active
+			transform: translateX(0%)
+	&-body
+		padding: 10px 15px
+		border-bottom: 1px solid #bbb
+		display: flex
+		align-items: center
+		font-size: 14px
+		cursor: pointer
+		img
+			width: 50px
+			height: 50px
+			border-radius: 50%
+			margin-right: 20px	
+	&-about
+		display: flex
+		flex-direction: column
+		span
+			margin: 2px 0
+	&__name
+		font-weight: bold
+
+	&-footer
+		position: fixed
+		width: 100%
+		bottom: 0
+		left: 0
+		[name="typeMsg"]
+			width: 100%
+			display: block
+			padding: 15px 20px			
+			// Additional resets for further consistency
+			text-align: center
+			font-family: inherit
+			font-size: inherit
+			appearance: none
+			color: #fff
+			font-weight: bold
+			letter-spacing: 0.4px
+			cursor: pointer
+			background-color: #000
+			z-index: 5
+			border: none
+			&::-ms-expand
+				display: none
+
+.create
+	position: absolute
+	z-index: 4
+	top: -110px
+	right: 40px
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	border: none
+	background-color: #000
+	cursor: pointer
+	&::after
+		content: ''
+		width: 1px
+		height: 20px
+		background-color: #fff
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+	&::before
+		content: ''
+		width: 20px
+		height: 1px
+		background-color: #fff
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+
+.notification
+	cursor: pointer
+	border: none
+	background-color: transparent
+	img
+		max-width: 19px
+		height: 19px
+
+@media (max-width: 500px)
+	.profile
+		font-size: 14px
